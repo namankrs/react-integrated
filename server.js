@@ -9,6 +9,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("hi");
+});
+
 app.get("/hello", (req, res) => {
   res.send({ body: "Welcome" });
 });
